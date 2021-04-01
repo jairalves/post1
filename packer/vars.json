@@ -13,6 +13,6 @@
     "cpu_num": "4",
     "mem_size": "8192",
     "disk_size": "32768",
-    "os_iso_path": "[ISO] ISOs/Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.ISO",
-    "vmtools_iso_path":"[ISO] ISOs/windows.iso"
+    "os_iso_path": "[datastore1] ISOs/Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.ISO",
+    "vmtools_iso_path":"[datastore1] ISOs/windows.iso"
 }
