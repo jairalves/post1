@@ -1,6 +1,6 @@
 {
     "vsphere_server": "10.10.10.1",
-    "vsphere_user": "admnistrator@vsphere.local",
+    "vsphere_user": "administrator@vsphere.local",
     "vsphere_password": "P@ssw0rd",
     "vsphere_template_name": "Win2016",
     "vsphere_folder": "lab_template",
