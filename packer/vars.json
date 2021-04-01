@@ -1,5 +1,5 @@
 {
-    "vsphere_server": "10.221.2.210",
+    "vsphere_server": "10.10.10.1",
     "vsphere_user": "admnistrator@vsphere.local",
     "vsphere_password": "P@ssw0rd",
     "vsphere_template_name": "Win2016",
