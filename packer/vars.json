@@ -1,0 +1,18 @@
+{
+    "vsphere_server": "10.221.2.210",
+    "vsphere_user": "admnistrator@vsphere.local",
+    "vsphere_password": "P@ssw0rd",
+    "vsphere_template_name": "Win2016",
+    "vsphere_folder": "lab_template",
+    "vsphere_dc_name": "lab-vmware",
+    "vsphere_compute_cluster": "lab-cluster",
+    "vsphere_host": "10.221.2.56",
+    "vsphere_portgroup_name": "DMZ_AMB_LABORATORIO",
+    "vsphere_datastore": "datastore1",
+    "winadmin_password": "P@ssw0rd",
+    "cpu_num": "4",
+    "mem_size": "8192",
+    "disk_size": "32768",
+    "os_iso_path": "[ISO] ISOs/Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.ISO",
+    "vmtools_iso_path":"[ISO] ISOs/windows.iso"
+}
