@@ -32,7 +32,6 @@
       "datacenter": "{{user `vsphere_dc_name`}}",
       "cluster":     "{{user `vsphere_compute_cluster`}}",
       "host": "{{user `vsphere_host`}}",
-      "network": "{{user `vsphere_portgroup_name`}}",
       "datastore": "{{user `vsphere_datastore`}}",
       "convert_to_template": "true",
 
@@ -48,10 +47,19 @@
       "firmware": "bios",
 
       "disk_controller_type":  "lsilogic-sas",
-      "disk_size":        "{{user `disk_size`}}",
-      "disk_thin_provisioned": true,
+      "storage": [
+        {
+          "disk_size": "{{user `disk_size`}}",
+          "disk_thin_provisioned": true
+        }
+      ],
 
-      "network_card": "vmxnet3",
+      "network_adapters": [
+        {
+          "network": "{{user `vsphere_portgroup_name`}}",
+          "network_card": "vmxnet3"
+        }
+      ],
 
       "iso_paths": [
         "{{user `os_iso_path`}}",
