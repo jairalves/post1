@@ -1,0 +1,8 @@
+---
+ansible_winrm_scheme = "http"
+ansible_connection = "winrm"
+ansible_port = 5985
+ansible_winrm_transport = "ntlm"
+ansible_user = "administrator" # é necessário informar o usuário no formato de User Principal Name (UPN)
+ansible_password = "P@ssw0rd" # prefira informar durante a execução ou colocar em um vault.
+ansible_winrm_server_cert_validation = "ignore"
