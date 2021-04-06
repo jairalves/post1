@@ -1,13 +1,12 @@
 ---
-- name: ping and update 
-  hosts: all 
+hosts: all 
 
-  - name: ping
-    win_ping:
+- name: ping
+  win_ping:
 
-  - name: Install all security updates with automatic reboots
-    ansible.windows.win_updates:
-    category_names:
-    - SecurityUpdates
-    reboot: yes
-    log_path: C:\ansible_wu.txt
+- name: Install all security updates with automatic reboots
+  ansible.windows.win_updates:
+  category_names:
+  - SecurityUpdates
+  reboot: yes
+  log_path: C:\ansible_wu.txt
