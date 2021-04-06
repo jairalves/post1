@@ -1,9 +1,6 @@
 ---
 hosts: all 
 
-- name: ping
-  win_ping:
-
 - name: Install all security updates with automatic reboots
   ansible.windows.win_updates:
   category_names:
