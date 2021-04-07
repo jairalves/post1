@@ -1,7 +1,7 @@
 ---
 
 - name: "Install Windows updates."
-  win_updates:
+  ansible.windows.win_updates:
     category_names: "{{ win_updates_category_names }}"
   register: win_updates_result
   failed_when:
@@ -12,7 +12,7 @@
 - block:
   # Attempting some error handling.
   - name: "Reboot Windows to re-try update installation."
-    win_reboot:
+    ansible.windows.win_reboot:
       shutdown_timeout_sec: 3600
       reboot_timeout_sec: 3600
     when:
@@ -21,7 +21,7 @@
 
     # Let it fail this time if reboot didn't work.
   - name: "Install Windows updates again."
-    win_updates:
+    ansible.windows.win_updates:
       category_names: "{{ win_updates_category_names }}"
     register: win_updates_result
 
@@ -31,7 +31,7 @@
     - win_updates_result.failed
 
 - name: "Reboot when updates installed."
-  win_reboot:
+  ansible.windows.win_reboot:
     shutdown_timeout_sec: 3600
     reboot_timeout_sec: 3600
   when:
