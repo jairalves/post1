@@ -1,59 +1,21 @@
 ---
-- name: Atualizacao do Windows
-  hosts: all 
+  - hosts: all
+    gather_facts: yes
+    tasks:
+      - name: check if reboot is required
+        win_updates:
+          category_names:
+            - SecurityUpdates
+            - CriticalUpdates
+            - DefinitionUpdates
+            - UpdateRollups
+            - Updates
+            - ServicePacks
+        register: update_result
+        check_mode: yes
 
-  tasks:
-
-  - name: "Install Windows updates."
-    ansible.windows.win_updates:
-      category_names: 
-        - SecurityUpdates
-        - CriticalUpdates
-        - UpdateRollups
-        - DefinitionUpdates
-        - Updates
-    register: win_updates_result
-    failed_when:
-      - win_updates_result.failed is defined
-      - win_updates_result.failed
-      - not win_updates_reboot
-
-  - block:
-  # Attempting some error handling.
-    - name: "Reboot Windows to re-try update installation."
-      ansible.windows.win_reboot:
-        shutdown_timeout_sec: 3600
-        reboot_timeout_sec: 3600
-      when:
-        - win_updates_result.error is defined
-        - win_updates_result.error == "A reboot is required before more updates can be installed."
-
-    # Let it fail this time if reboot didn't work.
-    - name: "Install Windows updates again."
-      ansible.windows.win_updates:
-        category_names: "{{ win_updates_category_names }}"
-      register: win_updates_result
-
-    when:
-      - win_updates_reboot
-      - win_updates_result.failed is defined
-      - win_updates_result.failed
-
-  - name: "Reboot when updates installed."
-    ansible.windows.win_reboot:
-      shutdown_timeout_sec: 3600
-      reboot_timeout_sec: 3600
-    when:
-      - win_updates_result.reboot_required is defined
-      - win_updates_result.reboot_required
-    register: reboot_status
-
-  - debug:
-      msg: |
-        {{ win_updates_result.installed_update_count }} updates were installed on {{ inventory_hostname }}.
-        The updates installed were:
-        {% for key, value in win_updates_result.updates.iteritems() %}
-          - {{ value.title }}
-        {% endfor %}
-        {{ win_updates_result.failed_update_count }} updates failed to install.
-        It took {{ reboot_status.elapsed / 60 }} minutes for the machine to reboot.
+      - name: pre-update reboot
+        win_reboot:
+          msg: "Reboot required before updates can be installed."
+          reboot_timeout: 1200
+        when: update_result.reboot_required or ansible_reboot_pending
