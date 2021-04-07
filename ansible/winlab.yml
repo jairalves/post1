@@ -2,6 +2,8 @@
 - name: Atualizacao do Windows
   hosts: all 
 
+  tasks:
+
   - name: Install all security updates with automatic reboots
     ansible.windows.win_updates:
     category_names:
