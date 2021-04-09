@@ -17,5 +17,5 @@
       - name: pre-update reboot
         win_reboot:
           msg: "Reboot required before updates can be installed."
-          reboot_timeout: 1200
+          reboot_timeout: 6000
         when: update_result.reboot_required or ansible_reboot_pending
