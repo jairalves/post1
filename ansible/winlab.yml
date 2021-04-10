@@ -12,8 +12,9 @@
             - Updates
             - ServicePacks
           log_path: C:\ansible_wu.txt
+          reboot: yes
         register: update_result
-        reboot: yes
+        
 
 #      - name: pre-update reboot
 #        win_reboot:
