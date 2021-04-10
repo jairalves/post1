@@ -1,5 +1,6 @@
 [windows]
 10.221.150.6
+10.221.150.101
 
 [windows:vars]
 ansible_winrm_scheme = "http"

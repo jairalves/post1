@@ -13,9 +13,10 @@
             - ServicePacks
           log_path: C:\ansible_wu.txt
         register: update_result
+        reboot: yes
 
-      - name: pre-update reboot
-        win_reboot:
-          msg: "Reboot required before updates can be installed."
-          reboot_timeout: 6000
-        when: update_result.reboot_required or ansible_reboot_pending
+#      - name: pre-update reboot
+#        win_reboot:
+#          msg: "Reboot required before updates can be installed."
+#          reboot_timeout: 6000
+#        when: update_result.reboot_required or ansible_reboot_pending
