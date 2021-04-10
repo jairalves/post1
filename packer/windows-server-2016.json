@@ -77,13 +77,7 @@
     {
       "type": "windows-shell",
       "inline": ["dir c:\\"]
-    },
-    {
-      "type": "ansible",
-      "playbook_file": "ansible/winlab.yml",
-      "user": "Administrator",
-      "use_proxy": false,
-      "extra_arguments": ["-e", "ansible_winrm_server_cert_validation=ignore"]
     }
   ]
 }
+
