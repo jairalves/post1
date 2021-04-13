@@ -2,9 +2,9 @@
 Windows-TesteH1.lab.com
 
 [windows:vars]
-#ansible_winrm_scheme = "https"
+ansible_winrm_scheme = "http"
 ansible_connection = "winrm"
-#ansible_port = 5986
+#ansible_port = 5985
 ansible_winrm_transport = "kerberos"
 ansible_user = "administrator@LAB.COM" # é necessário informar o usuário no formato de User Principal Name (UPN)
 ansible_password = "P@ssw0rd" # prefira informar durante a execução ou colocar em um vault.
