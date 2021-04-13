@@ -2,10 +2,10 @@
 10.221.150.101
 
 [windows:vars]
-ansible_winrm_scheme = "https"
+#ansible_winrm_scheme = "https"
 ansible_connection = "winrm"
-ansible_port = 5986
-ansible_winrm_transport = "ntlm"
-ansible_user = "administrator" # é necessário informar o usuário no formato de User Principal Name (UPN)
+#ansible_port = 5986
+ansible_winrm_transport = "kerberos"
+ansible_user = "administrator@lab.com" # é necessário informar o usuário no formato de User Principal Name (UPN)
 ansible_password = "P@ssw0rd" # prefira informar durante a execução ou colocar em um vault.
 ansible_winrm_server_cert_validation = "ignore"
