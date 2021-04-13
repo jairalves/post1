@@ -6,6 +6,6 @@
 ansible_connection = "winrm"
 #ansible_port = 5986
 ansible_winrm_transport = "kerberos"
-ansible_user = "administrator@lab.com" # é necessário informar o usuário no formato de User Principal Name (UPN)
+ansible_user = "administrator@LAB.COM" # é necessário informar o usuário no formato de User Principal Name (UPN)
 ansible_password = "P@ssw0rd" # prefira informar durante a execução ou colocar em um vault.
 ansible_winrm_server_cert_validation = "ignore"
