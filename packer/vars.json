@@ -2,7 +2,7 @@
     "vsphere_server": "10.10.10.1",
     "vsphere_user": "administrator@vsphere.local",
     "vsphere_password": "P@ssw0rd",
-    "vsphere_template_name": "Win2016",
+    "vsphere_template_name": "Win2016_Update",
     "vsphere_folder": "lab_template",
     "vsphere_dc_name": "lab-vmware",
     "vsphere_compute_cluster": "lab-cluster",
