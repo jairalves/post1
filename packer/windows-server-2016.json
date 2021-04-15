@@ -79,11 +79,13 @@
       "inline": ["dir c:\\"]
     },
     {
-      "type": "ansible",
-      "playbook_file": "ansible/winlab.yml",
-      "user": "Administrator",
-      "use_proxy": false,
-      "extra_arguments": ["-e", "ansible_winrm_server_cert_validation=ignore"]
+      "type": "windows-update",
+      "search_criteria": "IsInstalled=0",
+      "filters": [
+          "exclude:$_.Title -like 'Preview'",
+          "include:$true"
+      ],
+      "update_limit": 25
     }
   ]
 }
