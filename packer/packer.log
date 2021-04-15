@@ -1,0 +1,243 @@
+2021/04/14 23:56:09 [INFO] Packer version: 1.7.1 [go1.16.2 linux amd64]
+2021/04/14 23:56:09 [TRACE] discovering plugins in /usr/bin
+2021/04/14 23:56:09 [TRACE] discovering plugins in /root/.packer.d/plugins
+2021/04/14 23:56:09 [TRACE] discovering plugins in .
+2021/04/14 23:56:09 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2021/04/14 23:56:09 [INFO] PACKER_CONFIG env var set; attempting to open config file: /root/.packerconfig
+2021/04/14 23:56:09 [WARN] Config file doesn't exist: /root/.packerconfig
+2021/04/14 23:56:09 [INFO] Setting cache directory: /home/lab/post1/packer_cache
+2021/04/14 23:56:09 [TRACE] Starting internal plugin packer-builder-vsphere-iso
+2021/04/14 23:56:09 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-builder-vsphere-iso"}
+2021/04/14 23:56:09 Waiting for RPC address for: /usr/bin/packer
+2021/04/14 23:56:09 packer-builder-vsphere-iso plugin: [INFO] Packer version: 1.7.1 [go1.16.2 linux amd64]
+2021/04/14 23:56:09 packer-builder-vsphere-iso plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2021/04/14 23:56:09 packer-builder-vsphere-iso plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /root/.packerconfig
+2021/04/14 23:56:09 packer-builder-vsphere-iso plugin: [WARN] Config file doesn't exist: /root/.packerconfig
+2021/04/14 23:56:09 packer-builder-vsphere-iso plugin: [INFO] Setting cache directory: /home/lab/post1/packer_cache
+2021/04/14 23:56:09 packer-builder-vsphere-iso plugin: args: []string{"packer-builder-vsphere-iso"}
+2021/04/14 23:56:09 packer-builder-vsphere-iso plugin: Plugin address: unix /tmp/packer-plugin265150081
+2021/04/14 23:56:09 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin265150081
+2021/04/14 23:56:09 packer-builder-vsphere-iso plugin: Waiting for connection...
+2021/04/14 23:56:09 packer-builder-vsphere-iso plugin: Serving a plugin connection...
+2021/04/14 23:56:09 [TRACE] Starting internal plugin packer-provisioner-windows-shell
+2021/04/14 23:56:09 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-windows-shell"}
+2021/04/14 23:56:09 Waiting for RPC address for: /usr/bin/packer
+2021/04/14 23:56:09 packer-provisioner-windows-shell plugin: [INFO] Packer version: 1.7.1 [go1.16.2 linux amd64]
+2021/04/14 23:56:09 packer-provisioner-windows-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2021/04/14 23:56:09 packer-provisioner-windows-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /root/.packerconfig
+2021/04/14 23:56:09 packer-provisioner-windows-shell plugin: [WARN] Config file doesn't exist: /root/.packerconfig
+2021/04/14 23:56:09 packer-provisioner-windows-shell plugin: [INFO] Setting cache directory: /home/lab/post1/packer_cache
+2021/04/14 23:56:09 packer-provisioner-windows-shell plugin: args: []string{"packer-provisioner-windows-shell"}
+2021/04/14 23:56:09 packer-provisioner-windows-shell plugin: Plugin address: unix /tmp/packer-plugin827770837
+2021/04/14 23:56:09 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin827770837
+2021/04/14 23:56:09 packer-provisioner-windows-shell plugin: Waiting for connection...
+2021/04/14 23:56:09 packer-provisioner-windows-shell plugin: Serving a plugin connection...
+2021/04/14 23:56:09 [TRACE] Starting internal plugin packer-provisioner-ansible
+2021/04/14 23:56:09 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-ansible"}
+2021/04/14 23:56:09 Waiting for RPC address for: /usr/bin/packer
+2021/04/14 23:56:09 packer-provisioner-ansible plugin: [INFO] Packer version: 1.7.1 [go1.16.2 linux amd64]
+2021/04/14 23:56:09 packer-provisioner-ansible plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2021/04/14 23:56:09 packer-provisioner-ansible plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /root/.packerconfig
+2021/04/14 23:56:09 packer-provisioner-ansible plugin: [WARN] Config file doesn't exist: /root/.packerconfig
+2021/04/14 23:56:09 packer-provisioner-ansible plugin: [INFO] Setting cache directory: /home/lab/post1/packer_cache
+2021/04/14 23:56:09 packer-provisioner-ansible plugin: args: []string{"packer-provisioner-ansible"}
+2021/04/14 23:56:09 packer-provisioner-ansible plugin: Plugin address: unix /tmp/packer-plugin402715293
+2021/04/14 23:56:09 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin402715293
+2021/04/14 23:56:09 packer-provisioner-ansible plugin: Waiting for connection...
+2021/04/14 23:56:09 packer-provisioner-ansible plugin: Serving a plugin connection...
+2021/04/14 23:56:09 Preparing build: vsphere-iso
+2021/04/14 23:56:10 packer-provisioner-ansible plugin: ansible-playbook version: 2.10.7
+2021/04/14 23:56:10 ui: [1;32mvsphere-iso: output will be in this color.[0m
+2021/04/14 23:56:10 ui: 
+2021/04/14 23:56:10 Build debug mode: false
+2021/04/14 23:56:10 Force build: false
+2021/04/14 23:56:10 On error: 
+2021/04/14 23:56:10 Waiting on builds to complete...
+2021/04/14 23:56:10 Starting build run: vsphere-iso
+2021/04/14 23:56:10 Running builder: vsphere-iso
+2021/04/14 23:56:10 [INFO] (telemetry) Starting builder vsphere-iso
+2021/04/14 23:56:10 packer-builder-vsphere-iso plugin: No URLs were provided to Step Download. Continuing...
+2021/04/14 23:56:10 packer-builder-vsphere-iso plugin: No CD files specified. CD disk will not be made.
+2021/04/14 23:56:10 ui: [1;32m==> vsphere-iso: Creating VM...[0m
+2021/04/14 23:56:14 ui: [1;32m==> vsphere-iso: Customizing hardware...[0m
+2021/04/14 23:56:16 ui: [1;32m==> vsphere-iso: Mounting ISO images...[0m
+2021/04/14 23:56:16 packer-builder-vsphere-iso plugin: Check if ISO path is a Content Library path
+2021/04/14 23:56:17 packer-builder-vsphere-iso plugin: ISO path not identified as a Content Library path
+2021/04/14 23:56:17 packer-builder-vsphere-iso plugin: Using [datastore1] ISOs/Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.ISO as the datastore path
+2021/04/14 23:56:17 packer-builder-vsphere-iso plugin: Creating CD-ROM on controller '&{{{} 200 0xc000c3f680 <nil> <nil> <nil> 0 <nil>} 0 []}' with iso '[datastore1] ISOs/Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.ISO'
+2021/04/14 23:56:18 packer-builder-vsphere-iso plugin: Check if ISO path is a Content Library path
+2021/04/14 23:56:19 packer-builder-vsphere-iso plugin: ISO path not identified as a Content Library path
+2021/04/14 23:56:19 packer-builder-vsphere-iso plugin: Using [datastore1] ISOs/windows.iso as the datastore path
+2021/04/14 23:56:19 packer-builder-vsphere-iso plugin: Creating CD-ROM on controller '&{{{} 200 0xc0008b5580 <nil> <nil> <nil> 0 <nil>} 0 [3000]}' with iso '[datastore1] ISOs/windows.iso'
+2021/04/14 23:56:19 ui: [1;32m==> vsphere-iso: Adding configuration parameters...[0m
+2021/04/14 23:56:19 ui: [1;32m==> vsphere-iso: Creating floppy disk...[0m
+2021/04/14 23:56:19 packer-builder-vsphere-iso plugin: Floppy path: /tmp/packer408111084
+2021/04/14 23:56:19 packer-builder-vsphere-iso plugin: Initializing block device backed by temporary file
+2021/04/14 23:56:19 packer-builder-vsphere-iso plugin: Formatting the block device with a FAT filesystem...
+2021/04/14 23:56:19 packer-builder-vsphere-iso plugin: Initializing FAT filesystem on block device
+2021/04/14 23:56:19 packer-builder-vsphere-iso plugin: Reading the root directory from the filesystem
+2021/04/14 23:56:19 ui: [0;32m    vsphere-iso: Copying files flatly from floppy_files[0m
+2021/04/14 23:56:19 ui: [0;32m    vsphere-iso: Copying file: setup/autounattend.xml[0m
+2021/04/14 23:56:19 ui: [0;32m    vsphere-iso: Copying file: setup/setup.ps1[0m
+2021/04/14 23:56:19 ui: [0;32m    vsphere-iso: Copying file: setup/vmtools.cmd[0m
+2021/04/14 23:56:19 ui: [0;32m    vsphere-iso: Done copying files from floppy_files[0m
+2021/04/14 23:56:19 ui: [0;32m    vsphere-iso: Collecting paths from floppy_dirs[0m
+2021/04/14 23:56:19 ui: [0;32m    vsphere-iso: Resulting paths from floppy_dirs : [][0m
+2021/04/14 23:56:19 ui: [0;32m    vsphere-iso: Done copying paths from floppy_dirs[0m
+2021/04/14 23:56:19 ui: [1;32m==> vsphere-iso: Uploading created floppy image[0m
+2021/04/14 23:56:20 ui: [1;32m==> vsphere-iso: Adding generated Floppy...[0m
+2021/04/14 23:56:21 ui: [1;32m==> vsphere-iso: Set boot order temporary...[0m
+2021/04/14 23:56:23 ui: [1;32m==> vsphere-iso: Power on VM...[0m
+2021/04/14 23:56:25 packer-builder-vsphere-iso plugin: [INFO] Waiting for IP, up to total timeout: 30m0s, settle timeout: 5s
+2021/04/14 23:56:25 ui: [1;32m==> vsphere-iso: Waiting for IP...[0m
+2021/04/15 00:17:27 packer-builder-vsphere-iso plugin: VM IP aquired: 10.221.150.5
+2021/04/15 00:17:27 packer-builder-vsphere-iso plugin: VM IP is still the same: 10.221.150.5
+2021/04/15 00:17:28 packer-builder-vsphere-iso plugin: VM IP is still the same: 10.221.150.5
+2021/04/15 00:17:29 packer-builder-vsphere-iso plugin: VM IP is still the same: 10.221.150.5
+2021/04/15 00:17:30 packer-builder-vsphere-iso plugin: VM IP is still the same: 10.221.150.5
+2021/04/15 00:17:31 packer-builder-vsphere-iso plugin: VM IP is still the same: 10.221.150.5
+2021/04/15 00:17:32 packer-builder-vsphere-iso plugin: VM IP is still the same: 10.221.150.5
+2021/04/15 00:17:32 packer-builder-vsphere-iso plugin: VM IP seems stable enough: 10.221.150.5
+2021/04/15 00:17:32 ui: [1;32m==> vsphere-iso: IP address: 10.221.150.5[0m
+2021/04/15 00:17:32 ui: [1;32m==> vsphere-iso: Using winrm communicator to connect: 10.221.150.5[0m
+2021/04/15 00:17:32 packer-builder-vsphere-iso plugin: Waiting for WinRM, up to timeout: 30m0s
+2021/04/15 00:17:32 ui: [1;32m==> vsphere-iso: Waiting for WinRM to become available...[0m
+2021/04/15 00:17:32 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:17:32 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:17:32 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:17:32 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:17:37 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:17:37 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:17:37 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:17:37 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:17:42 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:17:42 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:17:42 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:17:42 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:17:47 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:17:47 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:17:47 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:17:47 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:17:52 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:17:52 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:17:52 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:17:52 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:17:57 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:17:57 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:17:57 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:17:57 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:18:02 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:18:02 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:18:02 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:18:02 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:18:07 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:18:07 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:18:07 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:18:07 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:18:12 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:18:12 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:18:12 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:18:12 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:18:17 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:18:17 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:18:17 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:18:17 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:18:22 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:18:22 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:18:22 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:18:22 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:18:27 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:18:27 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:18:27 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:18:27 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:18:32 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:18:32 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:18:32 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:18:32 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:18:37 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:18:37 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:18:37 packer-builder-vsphere-iso plugin: [ERROR] connection error: http response error: 401 - invalid content type
+2021/04/15 00:18:37 packer-builder-vsphere-iso plugin: [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2021/04/15 00:18:42 packer-builder-vsphere-iso plugin: [INFO] Attempting WinRM connection...
+2021/04/15 00:18:42 packer-builder-vsphere-iso plugin: [DEBUG] connecting to remote shell using WinRM
+2021/04/15 00:18:48 packer-builder-vsphere-iso plugin: Checking that WinRM is connected with: 'powershell.exe -EncodedCommand JABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQAgAD0AIAAnAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAJwA7AGkAZgAgACgAVABlAHMAdAAtAFAAYQB0AGgAIAB2AGEAcgBpAGEAYgBsAGUAOgBnAGwAbwBiAGEAbAA6AFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlACkAewAkAFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlAD0AJwBTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlACcAfQA7ACAAZQBjAGgAbwAgACIAVwBpAG4AUgBNACAAYwBvAG4AbgBlAGMAdABlAGQALgAiAA=='
+2021/04/15 00:18:48 packer-builder-vsphere-iso plugin: [INFO] starting remote command: powershell.exe -EncodedCommand JABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQAgAD0AIAAnAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAJwA7AGkAZgAgACgAVABlAHMAdAAtAFAAYQB0AGgAIAB2AGEAcgBpAGEAYgBsAGUAOgBnAGwAbwBiAGEAbAA6AFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlACkAewAkAFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlAD0AJwBTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlACcAfQA7ACAAZQBjAGgAbwAgACIAVwBpAG4AUgBNACAAYwBvAG4AbgBlAGMAdABlAGQALgAiAA==
+2021/04/15 00:18:51 ui: [0;32m    vsphere-iso: WinRM connected.[0m
+2021/04/15 00:18:51 packer-builder-vsphere-iso plugin: [INFO] command 'powershell.exe -EncodedCommand JABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQAgAD0AIAAnAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAJwA7AGkAZgAgACgAVABlAHMAdAAtAFAAYQB0AGgAIAB2AGEAcgBpAGEAYgBsAGUAOgBnAGwAbwBiAGEAbAA6AFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlACkAewAkAFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlAD0AJwBTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlACcAfQA7ACAAZQBjAGgAbwAgACIAVwBpAG4AUgBNACAAYwBvAG4AbgBlAGMAdABlAGQALgAiAA==' exited with code: 0
+2021/04/15 00:18:51 packer-builder-vsphere-iso plugin: Connected to machine
+2021/04/15 00:18:51 ui: [1;32m==> vsphere-iso: Connected to WinRM![0m
+2021/04/15 00:18:51 packer-builder-vsphere-iso plugin: Running the provision hook
+2021/04/15 00:18:51 [INFO] (telemetry) Starting provisioner windows-shell
+2021/04/15 00:18:51 ui: [1;32m==> vsphere-iso: Provisioning with windows-shell...[0m
+2021/04/15 00:18:51 packer-provisioner-windows-shell plugin: Found command: dir c:\
+2021/04/15 00:18:51 ui: [1;32m==> vsphere-iso: Provisioning with shell script: /tmp/windows-shell-provisioner951969584[0m
+2021/04/15 00:18:51 packer-provisioner-windows-shell plugin: Opening /tmp/windows-shell-provisioner951969584 for reading
+2021/04/15 00:18:51 packer-provisioner-windows-shell plugin: [INFO] 8 bytes written for 'uploadData'
+2021/04/15 00:18:51 [INFO] 8 bytes written for 'uploadData'
+2021/04/15 00:18:51 packer-builder-vsphere-iso plugin: Uploading file to 'c:/Windows/Temp/script.bat'
+2021/04/15 00:18:55 packer-builder-vsphere-iso plugin: [INFO] starting remote command: set "PACKER_BUILDER_TYPE=vsphere-iso" && set "PACKER_BUILD_NAME=vsphere-iso" && set "PACKER_HTTP_ADDR=10.221.150.3:0" && set "PACKER_HTTP_IP=10.221.150.3" && set "PACKER_HTTP_PORT=0" && "c:/Windows/Temp/script.bat"
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso:[0m
+2021/04/15 00:18:55 packer-builder-vsphere-iso plugin: [INFO] command 'set "PACKER_BUILDER_TYPE=vsphere-iso" && set "PACKER_BUILD_NAME=vsphere-iso" && set "PACKER_HTTP_ADDR=10.221.150.3:0" && set "PACKER_HTTP_IP=10.221.150.3" && set "PACKER_HTTP_PORT=0" && "c:/Windows/Temp/script.bat"' exited with code: 0
+2021/04/15 00:18:55 packer-builder-vsphere-iso plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso: C:\Users\Administrator>dir c:\[0m
+2021/04/15 00:18:55 [INFO] 0 bytes written for 'stderr'
+2021/04/15 00:18:55 [INFO] 480 bytes written for 'stdout'
+2021/04/15 00:18:55 [INFO] RPC client: Communicator ended with: 0
+2021/04/15 00:18:55 [INFO] RPC endpoint: Communicator ended with: 0
+2021/04/15 00:18:55 packer-provisioner-windows-shell plugin: [INFO] 480 bytes written for 'stdout'
+2021/04/15 00:18:55 packer-provisioner-windows-shell plugin: [INFO] 0 bytes written for 'stderr'
+2021/04/15 00:18:55 packer-provisioner-windows-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso:  Volume in drive C is System[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso:  Volume Serial Number is 52CE-A445[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso:[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso:  Directory of c:\[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso:[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso: 07/16/2016  04:23 PM    <DIR>          PerfLogs[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso: 04/15/2021  03:18 AM    <DIR>          Program Files[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso: 04/15/2021  07:13 AM    <DIR>          Program Files (x86)[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso: 04/15/2021  03:17 AM    <DIR>          Users[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso: 04/15/2021  03:18 AM    <DIR>          Windows[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso:                0 File(s)              0 bytes[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso:                5 Dir(s)  21,736,325,120 bytes free[0m
+2021/04/15 00:18:55 [INFO] (telemetry) ending windows-shell
+2021/04/15 00:18:55 [INFO] (telemetry) Starting provisioner ansible
+2021/04/15 00:18:55 ui: [1;32m==> vsphere-iso: Provisioning with Ansible...[0m
+2021/04/15 00:18:55 ui: [0;32m    vsphere-iso: Not using Proxy adapter for Ansible run:
+    vsphere-iso: 	Using WinRM Password from Packer communicator...[0m
+2021/04/15 00:18:55 packer-provisioner-ansible plugin: Creating inventory file for Ansible run...
+2021/04/15 00:18:55 ui: [1;32m==> vsphere-iso: Executing Ansible: ansible-playbook -e packer_build_name="vsphere-iso" -e packer_builder_type=vsphere-iso -e packer_http_addr=10.221.150.3:0 -e ansible_winrm_server_cert_validation=ignore -e ansible_password=***** -i /tmp/packer-provisioner-ansible090697048 /home/lab/post1/ansible/winlab.yml[0m
+2021/04/15 00:18:56 ui: [0;32m    vsphere-iso:[0m
+2021/04/15 00:18:56 ui: [0;32m    vsphere-iso: PLAY [all] *********************************************************************[0m
+2021/04/15 00:18:56 ui: [0;32m    vsphere-iso:[0m
+2021/04/15 00:18:56 ui: [0;32m    vsphere-iso: TASK [Gathering Facts] *********************************************************[0m
+2021/04/15 00:19:14 ui: [0;32m    vsphere-iso: ok: [default][0m
+2021/04/15 00:19:14 ui: [0;32m    vsphere-iso:[0m
+2021/04/15 00:19:14 ui: [0;32m    vsphere-iso: TASK [check if reboot is required] *********************************************[0m
+2021/04/15 00:47:09 ui: [0;32m    vsphere-iso: fatal: [default]: UNREACHABLE! => {"changed": false, "msg": "winrm connection error: HTTPConnectionPool(host='10.221.150.5', port=5985): Read timed out. (read timeout=30)", "unreachable": true}[0m
+2021/04/15 00:47:09 ui: [0;32m    vsphere-iso:[0m
+2021/04/15 00:47:09 ui: [0;32m    vsphere-iso: PLAY RECAP *********************************************************************[0m
+2021/04/15 00:47:09 ui: [0;32m    vsphere-iso: default                    : ok=1    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0[0m
+2021/04/15 00:47:09 ui: [0;32m    vsphere-iso:[0m
+2021/04/15 00:47:09 [INFO] (telemetry) ending ansible
+2021/04/15 00:47:09 ui: [1;32m==> vsphere-iso: Provisioning step had errors: Running the cleanup provisioner, if present...[0m
+2021/04/15 00:47:09 ui: [1;32m==> vsphere-iso: Clear boot order...[0m
+2021/04/15 00:47:10 ui: [1;32m==> vsphere-iso: Power off VM...[0m
+2021/04/15 00:47:18 ui: [1;32m==> vsphere-iso: Deleting Floppy image ...[0m
+2021/04/15 00:47:18 packer-builder-vsphere-iso plugin: Deleting floppy disk: /tmp/packer408111084
+2021/04/15 00:47:18 ui: [1;32m==> vsphere-iso: Destroying VM...[0m
+2021/04/15 00:47:20 [INFO] (telemetry) ending vsphere-iso
+2021/04/15 00:47:20 ui error: [1;31mBuild 'vsphere-iso' errored after 51 minutes 9 seconds: Error executing Ansible: Non-zero exit status: exit status 4[0m
+2021/04/15 00:47:20 ui: 
+==> Wait completed after 51 minutes 9 seconds
+2021/04/15 00:47:20 machine readable: error-count []string{"1"}
+2021/04/15 00:47:20 ui error: 
+==> Some builds didn't complete successfully and had errors:
+2021/04/15 00:47:20 machine readable: vsphere-iso,error []string{"Error executing Ansible: Non-zero exit status: exit status 4"}
+2021/04/15 00:47:20 ui error: --> vsphere-iso: Error executing Ansible: Non-zero exit status: exit status 4
+2021/04/15 00:47:20 ui: 
+==> Builds finished but no artifacts were created.
+2021/04/15 00:47:20 [INFO] (telemetry) Finalizing.
+2021/04/15 00:47:21 waiting for all plugin processes to complete...
+2021/04/15 00:47:21 /usr/bin/packer: plugin process exited
+2021/04/15 00:47:21 /usr/bin/packer: plugin process exited
+2021/04/15 00:47:21 /usr/bin/packer: plugin process exited
