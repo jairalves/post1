@@ -3,7 +3,7 @@
     "vsphere_server": "",
     "vsphere_user": "",
     "vsphere_password": "",
-    "vsphere_template_name": "",
+    "vsphere_template_name_win2019": "",
     "vsphere_folder": "",
     "vsphere_dc_name": "",
     "vsphere_compute_cluster": "",
@@ -27,7 +27,7 @@
       "password":            "{{user `vsphere_password`}}",
       "insecure_connection": "true",
 
-      "vm_name": "{{user `vsphere_template_name`}}",
+      "vm_name": "{{user `vsphere_template_name_win2019`}}",
       "folder" : "{{user `vsphere_folder`}}",
       "datacenter": "{{user `vsphere_dc_name`}}",
       "cluster":     "{{user `vsphere_compute_cluster`}}",
