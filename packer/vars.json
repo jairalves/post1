@@ -15,6 +15,6 @@
     "mem_size": "8192",
     "disk_size": "32768",
     "os_iso_path": "[datastore1] ISOs/Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.ISO",
-    "os_iso_path_win2019": "[datastore1] ISOs/SW_DVD9_Win_Server_STD_CORE_2019_1909.4_64Bit_Portuguese_DC_STD_MLF_X22-29343.ISO",
+    "os_iso_path_win2019": "[datastore1] ISOs/SW_DVD9_Win_Server_STD_CORE_2019_1909.4_64Bit_English_DC_STD_MLF_X22-29333.ISO",
     "vmtools_iso_path":"[datastore1] ISOs/windows.iso"
 }
