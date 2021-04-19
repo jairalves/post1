@@ -46,7 +46,7 @@
       "RAM_reserve_all": true,
       "firmware": "bios",
 
-      "shutdown_timeout": "1h",
+      "shutdown_timeout": "2h",
 
       "disk_controller_type":  "lsilogic-sas",
       "storage": [
