@@ -68,9 +68,9 @@
         "{{user `vmtools_iso_path`}}"
       ],
       "floppy_files": [
-        "setup/autounattend.xml",
-        "setup/setup.ps1",
-        "setup/vmtools.cmd"
+        "setup-2016/autounattend.xml",
+        "setup-2016/setup.ps1",
+        "setup-2016/vmtools.cmd"
       ]
     }
   ],
