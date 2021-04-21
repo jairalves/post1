@@ -47,6 +47,7 @@
       "firmware": "bios",
 
       "shutdown_timeout": "2h",
+      "ip_wait_timeout": "2h",
 
       "disk_controller_type":  "lsilogic-sas",
       "storage": [
