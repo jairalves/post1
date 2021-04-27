@@ -64,7 +64,10 @@
         "floppy_files": [
           "setup-centos7/ks.cfg"
         ],
-        "boot_command": " inst.text inst.ks=hd:fd0:/ks.cfg "
+        "boot_command": [        
+          "<esc><wait>",        
+          "linux ks=hd:fd0:/ks.cfg<enter>"      
+        ]
       }
     ]
   }
