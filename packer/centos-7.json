@@ -1,0 +1,62 @@
+{
+  "variables": {
+    "vsphere_server": "",
+    "vsphere_user": "",
+    "vsphere_password": "",
+    "vsphere_template_name": "",
+    "vsphere_folder": "",
+    "vsphere_dc_name": "",
+    "vsphere_compute_cluster": "",
+    "vsphere_host": "",
+    "vsphere_portgroup_name": "",
+    "vsphere_datastore": "",
+    "winadmin_password": "",
+    "cpu_num": "",
+    "mem_size": "",
+    "disk_size": "",
+    "os_iso_path": "",
+    "vmtools_iso_path":"",
+    "vsphere_template_name_centOS7":""
+  },
+    "builders": [
+      {
+        "type": "vsphere-iso",
+  
+        "vcenter_server":      "{{user `vsphere_server`}}",
+        "username":            "{{user `vsphere_user`}}",
+        "password":            "{{user `vsphere_password`}}",
+        "insecure_connection": "true",
+  
+        "vm_name": "{{user `vsphere_template_name_centOS7`}}",
+        "folder" : "{{user `vsphere_folder`}}",
+        "datacenter": "{{user `vsphere_dc_name`}}",
+        "cluster":     "{{user `vsphere_compute_cluster`}}",
+        "host": "{{user `vsphere_host`}}",
+        "datastore": "{{user `vsphere_datastore`}}",
+        "convert_to_template": "true",
+  
+        "guest_os_type": "centos7_64Guest",
+  
+        "ssh_username": "root",
+        "ssh_password": "P@ssw0rd",
+  
+        "CPUs":             1,
+        "RAM":              1024,
+        "RAM_reserve_all": false,
+  
+        "disk_controller_type":  "pvscsi",
+        "disk_size":        25000,
+        "disk_thin_provisioned": true,
+  
+        "network_card": "vmxnet3",
+  
+        "iso_paths": [
+          "[datastore1] ISOs/CentOS-7-x86_64-Minimal-2009.iso"
+        ],
+        "floppy_files": [
+          "setup-centos7/ks.cfg"
+        ],
+        "boot_command": " inst.text inst.ks=hd:fd0:/ks.cfg "
+            }
+    ]
+  }
