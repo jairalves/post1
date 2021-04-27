@@ -42,13 +42,21 @@
   
         "CPUs":             1,
         "RAM":              1024,
-        "RAM_reserve_all": false,
   
-        "disk_controller_type":  "pvscsi",
-        "disk_size":        25000,
-        "disk_thin_provisioned": true,
+        "disk_controller_type":  "lsilogic-sas",
+        "storage": [
+          {
+            "disk_size": "{{user `disk_size`}}",
+            "disk_thin_provisioned": true
+          }
+        ],
   
-        "network_card": "vmxnet3",
+        "network_adapters": [
+          {
+            "network": "{{user `vsphere_portgroup_name`}}",
+            "network_card": "vmxnet3"
+          }
+        ],
   
         "iso_paths": [
           "[datastore1] ISOs/CentOS-7-x86_64-Minimal-2009.iso"
@@ -57,6 +65,6 @@
           "setup-centos7/ks.cfg"
         ],
         "boot_command": " inst.text inst.ks=hd:fd0:/ks.cfg "
-            }
+      }
     ]
   }
