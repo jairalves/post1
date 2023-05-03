@@ -1,0 +1,11 @@
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  simple-job:
+    runs-on: self-hosted
+    steps:
+      - name: Sleep for 20 minutes
+        run: sleep 1200
+
