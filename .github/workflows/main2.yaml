@@ -1,0 +1,10 @@
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  simple-job:
+    runs-on: custom-runner
+    steps:
+      - name: Sleep for 20 minutes
+        run: sleep 1200
