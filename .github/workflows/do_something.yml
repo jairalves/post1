@@ -2,7 +2,7 @@ name: Do Something That Needs Scheduled
 
 on:
   repository_dispatch:
-    types: do-something
+    application: mhs
 #  schedule:
 #    - cron:  '*/5 * * * *'
 
